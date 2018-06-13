@@ -1,0 +1,30 @@
+server:
+  port: 9211
+logging:
+  level:
+    root: INFO
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: ["*"]
+  endpoint:
+    shutdown:
+      enabled: true
+  server:
+    port: 9212
+    address: 127.0.0.1
+  metrics:
+    web:
+      server:
+        auto-time-requests: true
+
+info:
+  contactEmail:
+    email: yefan9512@gmail.com
+    phone: 18733523347
+spring:
+  devtools:
+    livereload:
+      enabled: true
