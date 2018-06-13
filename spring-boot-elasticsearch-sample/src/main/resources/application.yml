@@ -1,0 +1,17 @@
+spring:
+  elasticsearch:
+    jest:
+      proxy:
+        host: 127.0.0.1
+        port: 9200
+      username: elastic
+      password: elastic
+      connection-timeout: 3s
+      uris: ["http://localhost:9200"]
+      multi-threaded: true
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      repositories:
+        enabled: true
+      cluster-nodes: localhost:9300
