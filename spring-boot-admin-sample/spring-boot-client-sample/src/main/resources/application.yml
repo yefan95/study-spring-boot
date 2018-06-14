@@ -1,0 +1,39 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:9101
+  datasource:
+    url: jdbc:mysql://47.92.91.234:3306/spring-data-jpa?useSSL=false&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: platform
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    database: mysql
+    generate-ddl: true
+  data:
+      jpa:
+        repositories:
+          enabled: true
+server:
+  port: 8090
+
+info:
+  contactEmail:
+    email: yefan9512@gmail.com
+    phone: 18733523347
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: ["*"]
+  server:
+    port: 8099
+    address: 127.0.0.1
+
+
