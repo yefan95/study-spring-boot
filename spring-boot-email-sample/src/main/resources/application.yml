@@ -1,0 +1,22 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 674784774@qq.com
+    password:
+    default-encoding: UTF-8
+    port: 587
+    test-connection: true
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          timeout: 25000
+
+mail:
+  fromMail:
+    address: 674784774@qq.com
+  toMail:
+    address: "yefan9512@gmail.com"
+server:
+  port: 9221
