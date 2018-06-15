@@ -1,0 +1,26 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 20000s
+    jedis:
+      pool:
+        max-active: 8
+        min-idle: 0
+        max-idle: 8
+        max-wait: -1ms
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+user:
+  prefix: "user:"
+server:
+  port: 9211
+  tomcat:
+    uri-encoding: UTF-8
+
+
+
+
