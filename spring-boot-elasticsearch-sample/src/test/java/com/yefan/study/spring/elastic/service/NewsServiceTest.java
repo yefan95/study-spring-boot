@@ -1,6 +1,5 @@
 package com.yefan.study.spring.elastic.service;
 
-import com.sun.org.apache.xml.internal.utils.ObjectStack;
 import com.yefan.study.spring.elastic.bean.News;
 import org.elasticsearch.action.search.SearchRequestBuilder;
 import org.elasticsearch.index.query.BoolQueryBuilder;
