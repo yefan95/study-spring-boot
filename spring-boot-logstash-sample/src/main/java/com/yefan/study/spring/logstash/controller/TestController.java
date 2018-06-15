@@ -28,6 +28,13 @@ public class TestController {
         return "ok";
     }
 
+    @GetMapping(value = "/warn")
+    @ResponseBody
+    public String warn(@RequestParam("msg") String msg) {
+        logger.warn(msg);
+        return "ok";
+    }
+
     @GetMapping(value = "/fail")
     @ResponseBody
     public String error(@RequestParam("msg") String msg) {
