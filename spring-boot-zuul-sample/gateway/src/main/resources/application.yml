@@ -1,0 +1,9 @@
+server:
+  port: 9225
+zuul:
+  routes:
+    books:
+      url: http://localhost:9231
+      path: /api/**
+
+
