@@ -12,6 +12,7 @@
         <module>spring-boot-admin-sample</module>
         <module>spring-boot-admin-sample</module>
         <module>spring-boot-amqp-sample</module>
+        <module>spring-boot-zuul-sample</module>
     </modules>
 
 
