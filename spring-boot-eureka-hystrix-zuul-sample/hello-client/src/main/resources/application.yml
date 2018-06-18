@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: hello-client
+server:
+  port: 8072
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8073/eureka/
+  instance:
+    hostname: localhost
+#hystrix:
+#  metrics:
+#    enabled: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds:  6000
