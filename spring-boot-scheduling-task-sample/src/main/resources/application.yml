@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/scheduling-task?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+#  mapper-locations: classpath:com/yefan/study/spring/scheduling/mapper/*.xml
+  mapper-locations: /mapper/*.xml
+  type-aliases-package: com.yefan.study.spring.scheduling.entity
